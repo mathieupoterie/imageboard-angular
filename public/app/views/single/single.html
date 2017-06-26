@@ -1,0 +1,45 @@
+<div class="images-container" ng-controller="imageIdCtrl">
+    <div class="image-container" id="single-image-container">
+        <p class="title">{{imageIdCtrl.title}}</p>
+        <p class="username"><em>Uploaded by {{imageIdCtrl.username}}</em></p>
+        <img  id="single-image" src="{{imageIdCtrl.image}}"/>
+        <div ng-if="!newLike" id="likes"><p><span ng-click="likeImage()" id="like-span">♡ {{imageIdCtrl.likes}}</span> &nbsp; | &nbsp; {{imageIdCtrl.description}}</p></div>
+        <div ng-if="newLike" id="likes"><p><span ng-click="notLikeTwice()" id="like-span">♡ {{newLike}}</span> &nbsp; | &nbsp; {{imageIdCtrl.description}}</p></div>
+        <div class="hashtag-container">
+            <a ng-repeat = "hashtag in imageIdCtrl.hashtag" ui-sref="hashtag({hashtag: hashtag})"><p class="hashtag">{{hashtag}}</p></a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div id="comment-form" ng-controller="commentCtrl">
+    <div id="main-container" ng-if="successComment">
+        <success></success>
+        <div class="comments-container">
+            <div class="comment-container">
+                <p class="username-comments">Posted by <b>{{successComment.name}} :</b></p>
+                <p class="content-comments"><em>{{successComment.comments}}</em></p>
+            </div>
+        </div>
+    </div>
+    <form id="form" method="post" ng-if="!successComment">
+        <h1>post a comment</h1>
+
+        <input ng-model="comment.user" id="user" type="text" name="user">
+        <p>user</p>
+        <textarea ng-model="comment.content" name='comment' id='comment' placeholder="Comment"></textarea>
+        <input ng-click="submitComment(comment, imageIdCtrl.id)" id="button1" type="submit" name="button"/>
+
+    </form>
+    <comments></comments>
+</div>
+
+
+<a id="back-button" ui-sref="home">Back</a>
+
+
+
+<script src="public/app/directives/directive.js"></script>

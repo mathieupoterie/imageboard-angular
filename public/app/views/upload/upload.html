@@ -1,0 +1,51 @@
+<div id="upload-form" ng-controller="uploadCtrl">
+    <div ng-if="!uploadedImage">
+        <h1>Upload your picture</h1>
+        <form  method="post">
+
+            <input ng-model="upload.user" id="user" type="text" name="user" value="">
+            <p>user</p>
+
+
+            <input ng-model="upload.title" id="title"  type="text" name="title" value="">
+            <p>title</p>
+
+
+             <input  ng-model="upload.hashtag" type="text" name="hastag" value="">
+            <p>hastag</p>
+
+
+
+
+            <!-- <input ng-model="upload.description" id="description"  type="text" name="description" value="">
+            <p>description</p> -->
+            <textarea ng-model="upload.description" name='description' id='description' placeholder="description"></textarea>
+
+
+            <div id="upload">
+                <input type="file" name="file" value="">
+
+
+                <input ng-click="submitUpload(upload)" id="button1" type="submit" name="button"/>
+
+
+            </div>
+        </form>
+    </div>
+    <div ng-if="uploadedImage" id="uploaded-image">
+        <h3>This is Your Image !</h3>
+        <img src="{{uploadedImage}}" alt="">
+
+    </div>
+    </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="/public/script.js"></script>
+    <script src="/public/app/app.js"></script>
+
+</body>
+
+</html>

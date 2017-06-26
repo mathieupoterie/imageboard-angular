@@ -1,0 +1,9 @@
+<div  ng-controller="commentsCtrl">
+    <div class="comments-container">
+        <div ng-if="comments.length > 0" ng-repeat="comment in comments" class="comment-container">
+            <p class="username-comments">Posted by <b>{{comment.name}} :</b></p>
+            <p class="content-comments"><em>{{comment.comments}}</em></p>
+        </div>
+    </div>
+    <button  ng-click="getComments()" ng-if="!end" id="more-button" type="button" name="button">MORE</button>
+</div>

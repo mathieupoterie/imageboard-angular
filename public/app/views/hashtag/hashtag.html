@@ -1,0 +1,25 @@
+<div   ng-controller="hashtagPageCtrl">
+
+    <h1 id="hashtag-page-title">Results for the {{titlehashtag}} hashtag</h1>
+
+    <div class="images-container">
+        <div class="search-bar">
+            <p >Search</p>
+            <input type="text" placeholder="Username" ng-model="search.username">
+            <input type="text" placeholder="hashtag" ng-model="search.hashtag">
+        </div>
+
+            <div ng-repeat="hashtagImage in hashtagImages | filter : search" class="image-container">
+                <p class="username">Uploaded by {{hashtagImage.username}}</p>
+                <img  src="{{hashtagImage.image}}"/>
+                <a ui-sref="single({imageId: hashtagImage.id})"><p class="title">{{hashtagImage.title}}</p></a>
+                <p class="description">{{hashtagImage.description}}</p>
+                <div class="hashtag-container">
+                    <a ng-repeat = "hashtag in hashtagImage.hashtag" ui-sref="hashtag({hashtag: hashtag})"><p class="hashtag">{{hashtag}}</p></a>
+                </div>
+                </div>
+    </div>
+</div>
+
+
+<a id="back-button" ui-sref="home">Back</a>
