@@ -2,12 +2,12 @@
 
     <h1 id="hashtag-page-title">Results for the {{titlehashtag}} hashtag</h1>
 
+    <div class="search-bar">
+        <p >Search</p>
+        <input type="text" placeholder="Username" ng-model="search.username">
+        <input type="text" placeholder="hashtag" ng-model="search.hashtag">
+    </div>
     <div class="images-container">
-        <div class="search-bar">
-            <p >Search</p>
-            <input type="text" placeholder="Username" ng-model="search.username">
-            <input type="text" placeholder="hashtag" ng-model="search.hashtag">
-        </div>
 
             <div ng-repeat="hashtagImage in hashtagImages | filter : search" class="image-container">
                 <p class="username">Uploaded by {{hashtagImage.username}}</p>
