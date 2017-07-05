@@ -1,12 +1,12 @@
 
 <div  ng-controller="imagesCtrl">
+    <div class="search-bar">
+        <p >Search</p>
+        <input type="text" placeholder="Username" ng-model="search.username">
+        <input type="text" placeholder="hashtag" ng-model="search.hashtag">
+    </div>
     <div class="images-container">
 
-        <div class="search-bar">
-            <p >Search</p>
-            <input type="text" placeholder="Username" ng-model="search.username">
-            <input type="text" placeholder="hashtag" ng-model="search.hashtag">
-        </div>
 
             <div ng-if="images.length > 0" ng-repeat="image in images | filter : search" class="image-container">
                 <p class="username">Uploaded by {{image.username}}</p>

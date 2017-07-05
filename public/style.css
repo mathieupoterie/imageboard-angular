@@ -63,7 +63,7 @@ header{
 .hashtag-container{
     display: flex;
     max-width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
     margin-bottom: 15px;
     position: relative;
@@ -180,7 +180,6 @@ header{
 }
 
 .images-container{
-    margin-top: 117px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -287,18 +286,20 @@ header{
 }
 
 .search-bar{
-    position: absolute;
-    top: 25%;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    text-align: center;
+    width: 420px;
+    left: 50%;
+    transform: translate(-50%);
     color: white;
     font-family: 'Lato', helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    left: 50%;
     min-width: 320px;
-    transform: translate(-50%,0);
     background:  rgb(52, 60, 53);
     padding: 10px;
-    margin-top: 5px;
 }
 
 .search-bar p{
@@ -378,10 +379,10 @@ header{
     transform: translate(-50%);
 }
 
-#hashtag{
-    display: flex;
-    justify-content: space-around;
+#description, #hashtag-form, #title, #user {
+    border: 1px black solid;
 }
+
 
 #button1:hover{
     color : darkslategrey;
@@ -396,7 +397,13 @@ header{
 }
 
 
-@media all and (max-width: 870px) and (min-width: 50px) {
+@media all and (max-width: 860px) and (min-width: 681px){
+    .search-bar{
+        min-width: 420px;
+    }
+}
+
+@media all and (max-width: 680px) and (min-width: 50px) {
     .search-bar{
         top: 22%;
         min-width: 50px;
@@ -405,9 +412,6 @@ header{
     }
     .search-bar input{
         margin-top: 13px;
-    }
-    .images-container{
-        margin-top : 117px;
     }
     #main-container{
         max-height: 122px
