@@ -415,9 +415,6 @@ header{
     #main-container{
         max-height: 122px
     }
-    #hashtag-page-title{
-        top:112px;
-    }
 }
 @media all and (max-width: 800px) and (min-width: 300px) {
 
