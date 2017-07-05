@@ -398,7 +398,7 @@ header{
 
 @media all and (max-width: 870px) and (min-width: 50px) {
     .search-bar{
-        top:20%;
+        top: 22%;
         min-width: 50px;
         text-align: center;
         width: 165px;

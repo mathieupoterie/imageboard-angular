@@ -88,7 +88,6 @@ function getHashtaggedImages(hashtag){
         const params = [hashtag]
 
         return db.query(q, params).then(function(results){
-            console.log(results, "results");
             resolve(results);
         }).catch(function(e){
             reject(e);

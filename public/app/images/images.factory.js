@@ -2,9 +2,6 @@ angular.module('app.factory.images', [])
 
 
 .factory('serviceHttp', ['$http', function($http){
-    console.log("hi?");
-
-
     var factory = {
         getImages: function(resultsLength){
             var data = $http({

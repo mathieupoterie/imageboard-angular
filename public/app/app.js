@@ -12,7 +12,6 @@ focal.controller('imagesCtrl', function($scope, serviceHttp){
             }else {
                 if (result.length < 6) {
                     $scope.end = true;
-
                 }
                 $scope.images = $scope.images.concat(result);
             }

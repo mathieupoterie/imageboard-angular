@@ -3,6 +3,7 @@ const multer = require('multer');
 const bodyParser = require('body-parser');
 const app = express();
 const db = require('./config/database');
+const s3 = require('./config/s3');
 
 
 var diskStorage = multer.diskStorage({
@@ -30,8 +31,8 @@ app.use('/public', express.static(__dirname + `/public`));
 app.use('/uploads', express.static(__dirname + `/uploads`));
 
 
-app.post('/uploadImageFromAngular', uploader.single('file'), function(req, res) {
-    var fileName = "/uploads/" + req.file.filename;
+app.post('/uploadImageFromAngular', uploader.single('file'), s3.toS3, function(req, res) {
+    var fileName = "https://s3.amazonaws.com/wasabi-image-board/" +  req.file.filename;
     var user = req.body.user;
     var title = req.body.title;
     var description = req.body.description;
@@ -50,7 +51,7 @@ app.post('/uploadImageFromAngular', uploader.single('file'), function(req, res) 
         })
         res.json({
             success : true,
-            file : "/uploads/"+ req.file.filename
+            file : "https://s3.amazonaws.com/wasabi-image-board/" + req.file.filename
         })
 
     } else {
@@ -118,7 +119,6 @@ app.get('/single', function(req, res){
 
 app.get('/hashtag', function(req, res){
     var hashtag = "%" + req.query.hashtag + "%";
-    console.log(hashtag);
 
     db.getHashtaggedImages(hashtag).then(function(results){
         if (results) {
@@ -176,8 +176,6 @@ app.post('/comment', function(req, res){
     var imageId = req.body.imageId;
 
     db.postComment(imageId, user, comment).then(function(results){
-        console.log("these are the results postComment", results);
-
         if (results) {
             res.json({
                 success : true,
@@ -185,7 +183,6 @@ app.post('/comment', function(req, res){
             })
 
         } else {
-            console.log("Please fill both user and comments field!");
             res.json({
                 success: false
             });
@@ -224,6 +221,6 @@ app.get('*', function(req, res){
 })
 
 
-app.listen(8080, function() {
+app.listen(process.env.PORT || 8080, function() {
     console.log("listening");
 })

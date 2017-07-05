@@ -1,4 +1,3 @@
-console.log("loaded too");
 angular.module('app.routes', ['ui.router'])
 
 .config(function($stateProvider, $locationProvider){
@@ -86,8 +85,6 @@ angular.module('app.routes', ['ui.router'])
 
 .controller('commentsCtrl', function($http, $stateParams, $scope){
     var resultsLength = 0;
-    // console.log("it goes here too");
-    // console.log($stateParams.imageId);
     $scope.getComments = function(){
         $http({
             url: '/comments',
@@ -149,6 +146,6 @@ angular.module('app.routes', ['ui.router'])
         $scope.hashtagImages = results;
         $scope.titlehashtag = $stateParams.hashtag
     }).catch(function(e){
-        console.log("errrroooor route.js imdIdCtrl controller");
+        console.log(e, "error");
     })
 })
