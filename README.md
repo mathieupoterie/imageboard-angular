@@ -24,6 +24,7 @@ I like how easy it is to make a filter features with Angular JS.
 
 
 This is how the single image page looks like. 
+![comment](https://user-images.githubusercontent.com/26822768/27919870-21c5b842-6273-11e7-8895-69676c3532fb.gif)
 
 
 You can upload images. I used an Amazon S3 bucket to store all the images online.
