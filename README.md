@@ -57,7 +57,7 @@ I really enjoyed this project, this was the first time I got into the module con
 **You can upload images. I used an **Amazon S3** bucket to store all the images online.**
 
 <p align="center">
-<img src=https://user-images.githubusercontent.com/26822768/27921847-613ebe00-6279-11e7-8a9e-6f34d3e9ff24.gif"/>
+<img src="https://user-images.githubusercontent.com/26822768/27921847-613ebe00-6279-11e7-8a9e-6f34d3e9ff24.gif"/>
 </p>
 
 
