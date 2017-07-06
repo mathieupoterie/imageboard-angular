@@ -21,6 +21,8 @@ This is a one week project, focusing on simple features : filters on home page, 
 I really enjoyed this project, this was the first time I got into the module concept, having a deep understanding of a website structure.
 
 I like how easy it is to make a filter features with Angular JS.
+![filter](https://user-images.githubusercontent.com/26822768/27921608-8de5fe06-6278-11e7-9a8d-ab19f97c3384.gif)
+
 
 
 This is how the single image page looks like. 
