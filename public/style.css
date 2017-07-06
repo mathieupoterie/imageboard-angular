@@ -378,7 +378,7 @@ header{
     transform: translate(-50%);
 }
 
-#description, #hashtag-form, #title, #user {
+#description, #hashtag-form, #title, #user, #comment {
     border: 1px black solid;
 }
 
