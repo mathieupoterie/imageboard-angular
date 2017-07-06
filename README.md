@@ -21,15 +21,15 @@ This is a one week project, focusing on simple features : filters on home page, 
 I really enjoyed this project, this was the first time I got into the module concept, having a deep understanding of a website structure.
 
 I like how easy it is to make a filter features with Angular JS.
-![Alt text](./public/screenshots/filter.gif?raw=true "Filter feature")
+
 
 This is how the single image page looks like. 
-![Alt text](./public/screenshots/comment.gif?raw=true " Single Image page")
+
 
 You can upload images. I used an Amazon S3 bucket to store all the images online.
-![Alt text](./public/screenshots/upload.gif?raw=true " Upload feature").
+
 
 I made the MVP for a responsive design, I still need to improve it.
-![Alt text](./public/screenshots/responsive.gif?raw=true "Responsive design")
+
 
 
