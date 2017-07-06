@@ -24,8 +24,10 @@ I really enjoyed this project, this was the first time I got into the module con
 
 **I like how easy it is to make a filter features with Angular JS.**
 
-
+<p align="center">
 ![filter](https://user-images.githubusercontent.com/26822768/27921608-8de5fe06-6278-11e7-9a8d-ab19f97c3384.gif)
+</p>
+
 
 
 
@@ -38,8 +40,10 @@ I really enjoyed this project, this was the first time I got into the module con
 
 **This is how the single image page looks like.** 
 
-
+<p align="center">
 ![comment](https://user-images.githubusercontent.com/26822768/27919870-21c5b842-6273-11e7-8895-69676c3532fb.gif)
+</p>
+
 
 
 
@@ -52,8 +56,10 @@ I really enjoyed this project, this was the first time I got into the module con
 
 **You can upload images. I used an **Amazon S3** bucket to store all the images online.**
 
-
+<p align="center">
 ![upload](https://user-images.githubusercontent.com/26822768/27921847-613ebe00-6279-11e7-8a9e-6f34d3e9ff24.gif)
+</p>
+
 
 
 
@@ -65,8 +71,12 @@ I really enjoyed this project, this was the first time I got into the module con
 
 **I made the MVP for a responsive design, I still need to improve it.**
 
-
+<p align="center">
 ![responsive](https://user-images.githubusercontent.com/26822768/27922452-5911d4ae-627b-11e7-8c74-89a5cc6be22b.gif)
+</p>
+
+
+
 
 
 
