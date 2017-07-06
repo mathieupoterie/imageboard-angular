@@ -1,4 +1,4 @@
-# Petition Project
+# Image Board Project (Angular JS)
 
 ## Website
 https://mp-focal.herokuapp.com/
