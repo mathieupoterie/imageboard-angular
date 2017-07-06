@@ -72,7 +72,7 @@ I really enjoyed this project, this was the first time I got into the module con
 **I made the MVP for a responsive design, I still need to improve it.**
 
 <p align="center">
-![responsive](https://user-images.githubusercontent.com/26822768/27922452-5911d4ae-627b-11e7-8c74-89a5cc6be22b.gif)
+<img src="https://user-images.githubusercontent.com/26822768/27922452-5911d4ae-627b-11e7-8c74-89a5cc6be22b.gif"/>
 </p>
 
 
