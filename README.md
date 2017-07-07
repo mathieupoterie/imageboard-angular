@@ -6,14 +6,14 @@ https://mp-focal.herokuapp.com/
 ## Overview
 
 Focal image board app - Fullstack project where the user can upload an image, with some informations, and interact with pictures uploaded by others, by commenting and liking them.
-	
-##Details
+
+## Details
 
 - **Angular JS** framework for making a single page application, using some powerful features such as filters, http request service, dynamic content rendering with scope service.
-- **Node JS** for server side coding, using *express*, *multer*, *body-parser* and other back-end dependencies. 
+- **Node JS** for server side coding, using *express*, *multer*, *body-parser* and other back-end dependencies.ï¿½
 - Interaction with the **Postgresql** database, by making complex queries (sorting the data, limiting the results).
-- **CSS** (*flexbox*), *media queries* for making the website responsive. 
-	
+- **CSS** (*flexbox*), *media queries* for making the website responsive.ï¿½
+
 
 ## Personal Word
 
@@ -22,7 +22,7 @@ I really enjoyed this project, this was the first time I got into the module con
 
 
 
-<p align="center"><b>*I like how easy it is to make a filter features with Angular JS.</b></p>
+<p align="center"><b>I like how easy it is to make a filter features with Angular JS.</b></p>
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/26822768/27921608-8de5fe06-6278-11e7-9a8d-ab19f97c3384.gif"/>
@@ -52,9 +52,3 @@ I really enjoyed this project, this was the first time I got into the module con
 <p align="center">
 <img src="https://user-images.githubusercontent.com/26822768/27922452-5911d4ae-627b-11e7-8c74-89a5cc6be22b.gif"/>
 </p>
-
-
-
-
-
-
