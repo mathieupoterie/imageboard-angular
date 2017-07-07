@@ -25,7 +25,7 @@ I really enjoyed this project, this was the first time I got into the module con
 <p align="center"><b>I like how easy it is to make a filter features with Angular JS.</b></p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26822768/27921608-8de5fe06-6278-11e7-9a8d-ab19f97c3384.gif"/>
+<img src="https://user-images.githubusercontent.com/26822768/27921608-8de5fe06-6278-11e7-9a8d-ab19f97c3384.gif" style="width: 200px;"/>
 </p>
 
 
